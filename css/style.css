@@ -3330,6 +3330,12 @@ input[type="button"].btn-block {
   display: none;
 }
 
+/* .navbar-collapse {
+  display: none;
+}
+.navbar-collapse.show {
+  display: block;
+} */
 .collapsing {
   position: relative;
   height: 0;

@@ -105,12 +105,12 @@
     });
   };
   carousel();
-  const open = document.querySelector(".navbar-collapse");
-  const btn = document.querySelector(".navbar-toggler");
+  // const open = document.querySelector(".navbar-collapse");
+  // const btn = document.querySelector(".navbar-toggler");
 
-  btn.addEventListener("click", () => {
-    open.classList.toggle("show");
-  });
+  // btn.addEventListener("click", () => {
+  //   open.classList.toggle("show");
+  // });
   $("nav .dropdown").hover(
     function () {
       var $this = $(this);
