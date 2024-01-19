@@ -105,6 +105,9 @@
     });
   };
   carousel();
+  // document.addEventListener("contextmenu", function (e) {
+  //   e.preventDefault(); // Prevent the default right-click menu
+  // });
   // const open = document.querySelector(".navbar-collapse");
   // const btn = document.querySelector(".navbar-toggler");
 
