@@ -10583,7 +10583,7 @@ h5,
 .h5 {
   line-height: 1.5;
   color: rgba(0, 0, 0, 0.8);
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .text-primary {
@@ -11975,13 +11975,14 @@ body > footer > div > div:nth-child(2) {
   margin-bottom: 0;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #000000;
+  color: white;
   position: relative;
 }
 
 .heading-section h2 {
   font-size: 34px;
   font-weight: 400;
+  color: white;
 }
 @media (max-width: 767.98px) {
   .heading-section h2 {
