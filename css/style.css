@@ -12731,7 +12731,7 @@ body > footer > div > div:nth-child(2) {
 }
 @keyframes l5 {
   0% {
-    box-shadow: 20px 0 #4f5eea, -20px 0 #0002;
+    box-shadow: 20px 0 #4f5eea, -20px 0 #4f5eea;
     background: #4f5eea;
   }
   33% {
@@ -12739,12 +12739,12 @@ body > footer > div > div:nth-child(2) {
     background: #0002;
   }
   66% {
-    box-shadow: 20px 0 #0002, -20px 0 #4f5eea;
-    background: #0002;
+    box-shadow: 20px 0 #ef4343, -20px 0 #ef4343;
+    background: #ef4343;
   }
   100% {
-    box-shadow: 20px 0 #0002, -20px 0 #4f5eea;
-    background: #4f5eea;
+    box-shadow: 20px 0 #16bca8, -20px 0 #16bca8;
+    background: #16bca8;
   }
 }
 /* #ftco-loader .circular {
