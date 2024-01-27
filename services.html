@@ -2,13 +2,14 @@
 <html lang="en">
 
 <head>
-  <title>Medvis Hospital - Manikonda
+  <title>Medvis Hospital - Services | Manikonda
     Jagir,HYDERABAD</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
-  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+  <!--favicon-->
+  <link rel="shortcut icon" href="images/6_x_6_logo1.png" type="image/x-icon" />
   <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
   <link rel="stylesheet" href="css/animate.css">
 
@@ -34,7 +35,7 @@
     <div class="container">
       <div class="row no-gutters d-flex align-items-start align-items-center px-3 px-md-0">
         <div class="col-md-4 order-md-2 mb-2 mb-md-0 align-items-center text-center">
-          <a class="navbar-brand" href="index.html"><img src="images/logomedvis2.png" alt="medvis hospital"
+          <a class="navbar-brand" href="index.html"><img src="images/MEDVIS-1.png" alt="medvis hospital"
               style="width: 150px;" /></a>
         </div>
         <div class="col-md-4 order-md-1 d-flex topper mb-md-0 mb-2 align-items-center text-md-right">
@@ -177,8 +178,8 @@
     <div class="container">
       <div class="row justify-content-center mb-5 pb-2">
         <div class="col-md-8 text-center heading-section ftco-animate">
-          <span class="subheading">Testimonials</span>
-          <h2 class="mb-4">Our Patients Says About Us</h2>
+          <span class="subheading" style="color: rgba(0, 0,0, 0.8);">Testimonials</span>
+          <h2 class="mb-4" style="color: rgba(0, 0,0, 0.8);">Our Patients Says About Us</h2>
         </div>
       </div>
       <div class="row ftco-animate justify-content-center">
@@ -268,13 +269,51 @@
   </section>
 
   <!--whatsapp-->
-  <a href="https://wa.me/+918886669086" class="whatsapp-link"><span class="icon icon-whatsapp whatsapp"></span></a>
+  <a href="https://wa.me/+918886669086" class="whatsapp-link"><span class="icon icon-whatsapp whatsapp"></span>
+    <div>
+      <p>Chat with Us!</p>
+    </div>
+  </a>
 
   <!--whatsapp-->
   <!--top-->
   <div class="topBtn">
     <span class="Tbtn" title="Top">⚕</span>
   </div>
+  <script>
+    //top going button
+    document.addEventListener("DOMContentLoaded", function () {
+      var mybutton = document.querySelector(".topBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        if (
+          document.body.scrollTop > 200 ||
+          document.documentElement.scrollTop > 200
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      };
+
+      // Function to smoothly scroll to the top
+      function scrollToTop() {
+        var currentPosition =
+          document.documentElement.scrollTop || document.body.scrollTop;
+
+        if (currentPosition > 0) {
+          window.requestAnimationFrame(scrollToTop);
+          window.scrollTo(0, currentPosition - currentPosition / 8); // Adjust the divisor for speed control
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      mybutton.addEventListener("click", function () {
+        scrollToTop();
+      });
+    });
+  </script>
   <!--top-->
   <footer class="ftco-footer ftco-bg-dark ftco-section">
     <div class="container">
@@ -367,7 +406,7 @@
 
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen">
-    <img src="images/logomedvis.png" alt="medvis hospital" style="width:150px;" />
+    <img src="images/6 x 6 logo.png" alt="medvis hospital" style="width:120px;" />
     <div class="loader"></div>
   </div>
   <!--loader-->

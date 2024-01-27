@@ -6503,9 +6503,30 @@ a.close.disabled {
   z-index: 999;
   box-shadow: 2px 2px 5px black;
   animation: w 5s linear infinite;
-  transition: 3s;
 }
-
+.whatsapp-link div {
+  position: fixed;
+  left: 60px;
+  bottom: 12px;
+  max-width: 100px;
+  background-color: white;
+  border-radius: 5px;
+  display: none;
+  transition: 0.5s all;
+}
+.whatsapp-link div p {
+  width: 100px;
+  margin: 0;
+}
+.whatsapp-link div p:before {
+  content: "";
+  position: absolute;
+  border-width: 5px;
+  border-style: solid;
+  left: -10px;
+  top: 30%;
+  border-color: transparent white transparent transparent;
+}
 @keyframes w {
   0%,
   100% {
@@ -6532,7 +6553,9 @@ a.close.disabled {
   background-color: #fff;
   box-shadow: 2px 2px 5px rgba(47, 36, 132, 255);
 }
-
+.whatsapp-link:hover div {
+  display: block;
+}
 .whatsapp-link:hover .whatsapp {
   color: #4f5eea;
 }
@@ -10541,10 +10564,8 @@ body {
   font-weight: 900;
   transition: 0.5s all;
 }
-.Tbtn {
-}
-.topBtn:hover .Tbtn {
-}
+
+
 
 @keyframes T {
   0%,
