@@ -4529,12 +4529,7 @@ input[type="button"].btn-block {
   justify-content: space-between;
   padding: 0.5rem 1rem;
 }
-.navbar.fixed{
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 999;
-}
+
 .navbar > .container,
 .navbar > .container-fluid {
   display: -webkit-box;
@@ -4575,6 +4570,7 @@ input[type="button"].btn-block {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  margin: auto;
 }
 .navbar-nav .nav-link {
   padding-right: 0;
@@ -10571,8 +10567,6 @@ body {
   transition: 0.5s all;
 }
 
-
-
 @keyframes T {
   0%,
   100% {
@@ -10734,6 +10728,68 @@ h5,
   width: 200px !important;
   display: none;
   margin-left: 2rem;
+  box-shadow: 2px 2px 3px;
+}
+.navbar.fixed {
+  position: fixed !important;
+  top: 0;
+  z-index: 999;
+  background-color: white !important;
+  width: 100%;
+  box-shadow: 1px 1px 3px black;
+}
+
+.navbar.fixed .navbar-nav {
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+}
+
+.navbar.fixed .logo-image {
+  width: 100px;
+}
+
+.navbar.fixed #fixedImage {
+  width: 100%;
+  padding: 10px;
+}
+
+@media (max-width: 992px) {
+  .navbar.fixed .container {
+    width: auto;
+    margin: unset;
+  }
+
+  .navbar.fixed {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  .navbar.fixed .ftco-navbar-light .navbar-toggler {
+    color: #16bca8 !important;
+  }
+
+  .navbar.fixed .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    background-color: white;
+  }
+
+  .navbar.fixed .navbar-nav .nav-item.active .nav-link {
+    color: #16bca8;
+  }
+
+  .navbar.fixed .navbar-nav .nav-link {
+    color: black;
+  }
+
+  .navbar.fixed .navbar-nav .nav-link:hover {
+    color: #16bca8;
+  }
 }
 
 .nav-item.drop-down .drop-items li {
@@ -10743,7 +10799,6 @@ h5,
 
 .nav-item.drop-down .drop-items li:hover {
   background-color: white;
-
 }
 
 .nav-item.drop-down .drop-items li:hover a {
@@ -10825,7 +10880,7 @@ h5,
 }
 .ftco-navbar-light .navbar-toggler {
   border: none;
-  color: rgba(255, 255, 255, 0.5) !important;
+  color: black;
   cursor: pointer;
   padding-right: 0;
   text-transform: uppercase;

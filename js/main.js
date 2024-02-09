@@ -318,3 +318,18 @@ document.addEventListener("DOMContentLoaded", function () {
     scrollToTop();
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  var navbar = document.querySelector(".navbar");
+  var fixedImage = document.getElementById("fixedImage");
+
+  window.addEventListener("scroll", function () {
+    if (window.scrollY >= 200) {
+      navbar.classList.add("fixed");
+      fixedImage.style.display = "block";
+    } else {
+      navbar.classList.remove("fixed");
+      fixedImage.style.display = "none";
+    }
+  });
+});
