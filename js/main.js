@@ -61,7 +61,7 @@
       animateOut: "fadeOut",
       animateIn: "fadeIn",
       nav: false,
-      autoplayHoverPause: false,
+      // autoplayHoverPause: false,
       items: 1,
       navText: [
         "<span class='ion-md-arrow-back'></span>",

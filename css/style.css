@@ -10539,7 +10539,7 @@ body {
   font-weight: 400;
   color: rgba(0, 0, 0, 0.6);
   scroll-behavior: smooth;
-  overflow-y: auto;
+  /* overflow-y: auto; */
 }
 body.menu-show {
   overflow: hidden;
