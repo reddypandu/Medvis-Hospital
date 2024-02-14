@@ -11394,7 +11394,34 @@ h5,
     margin-bottom: 40px;
   }
 }
+section.videos {
+  background-color: #16bca8;
+}
 
+.videos .work-videos {
+  text-transform: uppercase;
+  text-decoration: underline #16bca8;
+}
+
+.videos .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.videos .container .video {
+  height: 360px;
+  width: 360px;
+}
+
+.videos .container .video video {
+  width: 100%;
+  height: 100%;
+  border: 3px solid white;
+}
 .wrap-about {
   position: relative;
 }

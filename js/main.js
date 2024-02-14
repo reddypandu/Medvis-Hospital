@@ -61,12 +61,14 @@
       animateOut: "fadeOut",
       animateIn: "fadeIn",
       nav: false,
-      // autoplayHoverPause: false,
+      autoplayHoverPause: true,
       items: 1,
       navText: [
         "<span class='ion-md-arrow-back'></span>",
         "<span class='ion-chevron-right'></span>",
       ],
+      // mouseDrag: true,
+      // touchDrag: true,
       responsive: {
         0: {
           items: 1,
