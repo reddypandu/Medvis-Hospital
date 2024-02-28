@@ -11548,7 +11548,6 @@ section.videos {
   -webkit-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  
 }
 .staff .img-wrap {
   height: 300px;
@@ -11874,7 +11873,19 @@ textarea.form-control {
   opacity: 0;
   visibility: hidden;
 }
-
+.services.ftco-animate.box:hover {
+}
+.services.ftco-animate.box .media {
+  box-shadow: 4px 4px 8px white, -4px -4px 8px white;
+  border-radius: 20px;
+}
+.services.ftco-animate.box .media .icon {
+  margin-top: 10px;
+  border: 1px solid white;
+}
+.services.ftco-animate.box .media .icon span {
+  border-color: white;
+}
 .bg-primary {
   background: #4f5eea !important;
 }
