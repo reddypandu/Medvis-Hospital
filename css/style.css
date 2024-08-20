@@ -88,7 +88,9 @@ hr {
   height: 0;
   overflow: visible;
 }
-
+.navbar-brand img{
+  width: 80px ;
+}
 h1,
 h2,
 h3,
